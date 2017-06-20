@@ -14,6 +14,18 @@ namespace Ulatina.PrograAvanzada.BLAplicacionWeb
     {
 
         [OperationContract]
+        double Sume(double elOperandoUno, double elOperandoDos);
+
+        [OperationContract]
+        double Reste(double elOperandoUno, double elOperandoDos);
+
+        [OperationContract]
+        double Multiplique(double elOperandoUno, double elOperandoDos);
+
+        [OperationContract]
+        double Divide(double elOperandoUno, double elOperandoDos);
+
+        [OperationContract]
         string WhatDateIsToday();
 
         [OperationContract]

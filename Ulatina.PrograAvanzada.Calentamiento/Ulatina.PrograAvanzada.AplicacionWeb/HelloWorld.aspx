@@ -18,6 +18,10 @@
             <br />
             <br />
         </div>
+        <asp:TextBox ID="Operando1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Operando2" runat="server"></asp:TextBox>
+        <asp:Button ID="btnSumar" runat="server" OnClick="btnSumar_Click" Text="Sume" />
+        <asp:Label ID="Resultado" runat="server"></asp:Label>
     </form>
 </body>
 </html>

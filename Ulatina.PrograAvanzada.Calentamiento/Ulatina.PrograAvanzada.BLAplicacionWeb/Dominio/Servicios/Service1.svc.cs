@@ -13,6 +13,42 @@ namespace Ulatina.PrograAvanzada.BLAplicacionWeb
     public class Service1 : IService1
     {
 
+        public double Sume(double elOperandoUno, double elOperandoDos)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.Sumar();
+            elResultado = laAccion.CalculeLaSuma(elOperandoUno, elOperandoDos);
+
+            return elResultado;
+        }
+
+        public double Reste(double elOperandoUno, double elOperandoDos)
+        {
+            double elResultado = 0;
+            //var laAccion = new Dominio.Acciones.Restar();
+            //elResultado = laAccion.ObtengaLaFecha();
+
+            return elResultado;
+        }
+
+        public double Multiplique(double elOperandoUno, double elOperandoDos)
+        {
+            double elResultado = 0;
+            //var laAccion = new Dominio.Acciones.Multiplicar();
+            //elResultado = laAccion.ObtengaLaFecha();
+
+            return elResultado;
+        }
+
+        public double Divide(double elOperandoUno, double elOperandoDos)
+        {
+            double elResultado = 0;
+            //var laAccion = new Dominio.Acciones.Dividir();
+            //elResultado = laAccion.ObtengaLaFecha();
+
+            return elResultado;
+        }
+
         public string WhatDateIsToday()
         {
             string elResultado;

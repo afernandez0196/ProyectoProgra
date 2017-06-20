@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.PrograAvanzada.HelloWorld", "Ulatina.PrograAvanzada.HelloWorld\Ulatina.PrograAvanzada.HelloWorld.csproj", "{534E96BA-4372-4134-BC21-8A791B495011}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.PrograAvanzada.AplicacionWeb", "Ulatina.PrograAvanzada.AplicacionWeb\Ulatina.PrograAvanzada.AplicacionWeb.csproj", "{2AE39651-4B52-417C-B985-798B26C2179E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3E9325D-00AC-4C89-9D0E-8333BB98D07C} = {C3E9325D-00AC-4C89-9D0E-8333BB98D07C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.PrograAvanzada.BLAplicacionWeb", "Ulatina.PrograAvanzada.BLAplicacionWeb\Ulatina.PrograAvanzada.BLAplicacionWeb.csproj", "{C3E9325D-00AC-4C89-9D0E-8333BB98D07C}"
 EndProject

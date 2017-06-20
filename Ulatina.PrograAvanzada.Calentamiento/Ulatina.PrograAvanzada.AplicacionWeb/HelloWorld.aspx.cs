@@ -14,5 +14,12 @@ namespace Ulatina.PrograAvanzada.AplicacionWeb
         {
             lblFechaSeleccionada.Text = cldFechaDeEntrada.SelectedDate.ToShortDateString ();
         }
+
+        protected void btnSumar_Click(object sender, EventArgs e)
+        {
+            var laAccion = new Acciones.InvocarALaSuma();
+            var elResultado = laAccion.CalculeLaSuma(Operando1.Text, Operando2.Text);
+            Resultado.Text = elResultado;
+        }
     }
 }
