@@ -6,12 +6,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C3E9325D-00AC-4C89-9D0E-8333BB98D07C}</ProjectGuid>
+    <ProjectGuid>{E419715B-4A7D-4C14-A87E-2DF840CC9894}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ulatina.PrograAvanzada.BLAplicacionWeb</RootNamespace>
-    <AssemblyName>Ulatina.PrograAvanzada.BLAplicacionWeb</AssemblyName>
+    <RootNamespace>Ulatina.PrograAvanzada.MatricesWcf</RootNamespace>
+    <AssemblyName>Ulatina.PrograAvanzada.MatricesWcf</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -64,20 +64,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dominio\Acciones\ObtenerFechaActual.cs" />
-    <Compile Include="Dominio\Especificaciones\ObtengaFecha.cs" />
+    <Compile Include="Dominio\Acciones\Simetrica.cs" />
+    <Compile Include="Dominio\Acciones\Transponer.cs" />
     <Compile Include="Dominio\Servicios\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
     <Compile Include="Dominio\Interfaces\IService1.cs" />
+    <Compile Include="Dominio\Validaciones\TamanosMatriz.cs" />
+    <Compile Include="Dominio\Especificaciones\Simetrica.cs" />
+    <Compile Include="Dominio\Especificaciones\Transpuesta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Dominio\Acciones\Sumar.cs" />
-    <Compile Include="Ulatina\PrograAvanzada\BLAplicacionWeb\Dominio\Especificaciones\RealiceLaSuma.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Dominio\Repositorios\" />
-    <Folder Include="Ulatina\PrograAvanzada\BLAplicacionWeb\Dominio\Acciones\" />
+    <Folder Include="Dominio\Repositorio\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
@@ -86,9 +86,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -103,9 +100,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>64595</DevelopmentServerPort>
+          <DevelopmentServerPort>50404</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:64595/</IISUrl>
+          <IISUrl>http://localhost:50404/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
