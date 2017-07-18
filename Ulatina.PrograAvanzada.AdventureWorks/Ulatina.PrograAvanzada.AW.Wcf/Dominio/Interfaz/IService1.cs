@@ -19,7 +19,13 @@ namespace Ulatina.PrograAvanzada.AW.Wcf
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
-        // TODO: agregue aquí sus operaciones de servicio
+
+        [OperationContract]
+        Model.Product EncontrarProductoPorNumero(string elNumero);
+
+        [OperationContract]
+        IList <Model.Product> BuscarProductoPorRangoDePrecio(decimal elPrecioInferior, decimal elPrecioSuperior);
+
     }
 
 
