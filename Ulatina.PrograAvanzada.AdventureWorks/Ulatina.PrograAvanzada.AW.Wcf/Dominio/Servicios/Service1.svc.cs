@@ -19,6 +19,14 @@ namespace Ulatina.PrograAvanzada.AW.Wcf
             return elProducto;
         }
 
+        public IList<Model.Product> ListarTodos()
+        {
+            decimal elPrecioInferior = 10, elPrecioSuperior = 20;
+            var laAccion = new Acciones.Productos();
+            var losProductos = laAccion.BuscarProductoPorRangoDePrecio(elPrecioInferior, elPrecioSuperior);
+            return losProductos;
+        }
+
         public IList<Model.Product> BuscarProductoPorRangoDePrecio(decimal elPrecioInferior, decimal elPrecioSuperior)
         {
             var laAccion = new Acciones.Productos();

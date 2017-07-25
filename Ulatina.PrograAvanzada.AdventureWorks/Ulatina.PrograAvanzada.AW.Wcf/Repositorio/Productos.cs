@@ -29,7 +29,7 @@ namespace Ulatina.PrograAvanzada.AW.Wcf.Repositorio
         public Model.Product EncontrarProductoPorNumero(string elNumero)
         {
             Model.Product elProducto = new Model.Product();
-            elProducto = _Contexto.Product.Include("ProductSubCategory, ProductModel, ProductReview, ProductSubCategory.ProductCategory").Where(p => p.ProductNumber.Equals(elNumero)).FirstOrDefault();
+            elProducto = _Contexto.Product.Include("ProductSubCategory").Include("ProductModel").Include(" ProductReview").Include("ProductSubCategory.ProductCategory").Where(p => p.ProductNumber.Equals(elNumero)).FirstOrDefault();
             return elProducto;
         }
 
