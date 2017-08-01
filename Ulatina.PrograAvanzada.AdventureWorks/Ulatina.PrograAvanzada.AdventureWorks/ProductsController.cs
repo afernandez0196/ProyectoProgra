@@ -25,6 +25,18 @@ namespace Ulatina.PrograAvanzada.AdventureWorks
             return View(products.ToList());
         }
 
+        public ActionResult IndexViewModel()
+        {
+            decimal elPrecioInferior = 20;
+            decimal elPrecioSuperior = (decimal)55.6;
+            var laAccion = new AW.Wcf.Acciones.Productos();
+            var products = laAccion.BuscarProductoPorRangoDePrecio(elPrecioInferior, elPrecioSuperior);
+            var laAccionViewModel = new Dominio.Acciones.ConvertirProductEnViewModel();
+            var productsViewModel = laAccionViewModel.ConviertaListaDeProductos(products);
+            //var products = db.Products.Include(p => p.ProductModel).Include(p => p.ProductSubcategory);
+            return View(productsViewModel.ToList());
+        }
+
         // GET: Products/Details/5
         public ActionResult MisDetallesPorProductNumber(string productNumber)
         {
